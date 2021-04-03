@@ -1,0 +1,779 @@
+2020-08-04T16:17:41.163 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2020-08-04T16:17:41.183 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2020-08-04T16:17:41.185 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2020-08-04T16:17:41.187 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Suite Name null
+2020-08-04T16:17:42.374 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-470:Verify Bookmarking for Scorm Course
+2020-08-04T16:17:42.379 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1392:Verify Course Search when Toggle Switch 'Show Completed Courses' is Turned OFF
+2020-08-04T16:17:42.385 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1391:Verify Course Search when Toggle Switch 'Show Completed Courses' is Turned ON
+2020-08-04T16:17:42.389 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1386:Verify last saved setting of toggle switch 'Show Completed Courses'
+2020-08-04T16:17:42.395 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1414:Verify Override admin default toggle setting
+2020-08-04T16:17:42.400 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-333:Verify SCORM Course Description page opened from LC My Courses
+2020-08-04T16:17:42.405 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-413:Verify Search Course with Combination of Search box and Filters
+2020-08-04T16:17:42.411 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-411:Verify Search for Courses using Search box
+2020-08-04T16:17:42.417 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-415:Verify Sorting on My Courses
+2020-08-04T16:17:42.423 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-332:Verify iComposer Course Description page opened from LC My Courses
+2020-08-04T16:17:42.430 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-334:Verify Curriculum Description page opened from LC My Courses
+2020-08-04T16:17:42.444 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1605:Verify after change language system should display successful message
+2020-08-04T16:17:42.450 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-265:Verify Login to Learner Center console via ilms connect
+2020-08-04T16:17:42.455 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-863:Verify the switch back behavior when Training Manager have other roles
+2020-08-04T16:17:42.461 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-351:Login with Email ID / Employee ID
+2020-08-04T16:17:42.470 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-573:Verify Certificate on User Transcript for certification courses
+2020-08-04T16:17:42.480 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-581:Verify Certificate on User Transcript for non certification courses
+2020-08-04T16:17:42.485 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-572:Verify Certificate on User Transcript as per customize Certificate setting at org level
+2020-08-04T16:17:42.493 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-496:Verify Catalog - Course with Closed Enrollment
+2020-08-04T16:17:42.572 [iel] INFO  [com.iel.automation.library.TestBase] -
+				In after Suite method 
+2020-08-04T16:17:42.572 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Exception Occured while doing logOut  :
+2020-08-04T16:17:42.573 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:19:20.915 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_Learner_testng.xml, iLMS_OrgAdmin_testng.xml, iLMS_MasterSuperAdmin_testng.xml]
+2020-08-04T16:19:25.998 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\
+2020-08-04T16:19:28.004 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\
+2020-08-04T16:19:30.015 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2020-08-04T16:19:37.663 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2020-08-04T16:19:37.664 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2020-08-04T16:19:37.664 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2020-08-04T16:19:37.665 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Suite Name iLMS_Learner_testng.xml
+2020-08-04T16:19:38.576 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Environment is : Staging
+2020-08-04T16:19:41.899 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Using chromedriver 84.0.4147.30 (since Google Chrome 84 is installed in your machine)
+2020-08-04T16:19:41.966 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2020-08-04T16:19:42.870 [iel] INFO  [io.github.bonigarcia.wdm.Downloader] -
+				Downloading https://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_win32.zip
+2020-08-04T16:19:48.999 [iel] INFO  [io.github.bonigarcia.wdm.Downloader] -
+				Extracting binary from compressed file chromedriver_win32.zip
+2020-08-04T16:19:49.307 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Exporting webdriver.chrome.driver as C:\Users\shreyas.khandekar\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe
+2020-08-04T16:19:57.228 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Chrome browser is launched
+2020-08-04T16:19:57.228 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Browser instance created
+2020-08-04T16:20:10.091 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				About to begin executing Test Test
+2020-08-04T16:23:11.885 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-470:Verify Bookmarking for Scorm Course
+2020-08-04T16:23:11.889 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.892 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.892 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.895 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1392:Verify Course Search when Toggle Switch 'Show Completed Courses' is Turned OFF
+2020-08-04T16:23:11.898 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.899 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.899 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.900 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1391:Verify Course Search when Toggle Switch 'Show Completed Courses' is Turned ON
+2020-08-04T16:23:11.904 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.905 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.905 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.906 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1386:Verify last saved setting of toggle switch 'Show Completed Courses'
+2020-08-04T16:23:11.909 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.910 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.910 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.912 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1414:Verify Override admin default toggle setting
+2020-08-04T16:23:11.914 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.915 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.915 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.916 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-333:Verify SCORM Course Description page opened from LC My Courses
+2020-08-04T16:23:11.921 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.922 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.923 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.924 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-413:Verify Search Course with Combination of Search box and Filters
+2020-08-04T16:23:11.928 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.929 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.929 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.930 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-411:Verify Search for Courses using Search box
+2020-08-04T16:23:11.933 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.933 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.934 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.935 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-415:Verify Sorting on My Courses
+2020-08-04T16:23:11.941 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.941 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.942 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.944 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-332:Verify iComposer Course Description page opened from LC My Courses
+2020-08-04T16:23:11.949 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.949 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.950 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:23:11.952 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-334:Verify Curriculum Description page opened from LC My Courses
+2020-08-04T16:23:11.957 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCMyCoursesTest
+2020-08-04T16:23:11.959 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:23:11.959 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:26:13.286 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-1605:Verify after change language system should display successful message
+2020-08-04T16:26:13.294 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LearnerCenterHomeTest
+2020-08-04T16:26:13.295 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:26:13.295 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:26:13.296 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-265:Verify Login to Learner Center console via ilms connect
+2020-08-04T16:26:13.301 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LearnerCenterHomeTest
+2020-08-04T16:26:13.302 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:26:13.302 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:26:13.303 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-863:Verify the switch back behavior when Training Manager have other roles
+2020-08-04T16:26:13.309 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LearnerCenterHomeTest
+2020-08-04T16:26:13.311 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:26:13.312 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:26:13.314 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-351:Login with Email ID / Employee ID
+2020-08-04T16:26:13.320 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LearnerCenterHomeTest
+2020-08-04T16:26:13.321 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:26:13.321 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:29:14.619 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-573:Verify Certificate on User Transcript for certification courses
+2020-08-04T16:29:14.627 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCTranscriptTest
+2020-08-04T16:29:14.629 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:29:14.630 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:29:14.634 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-581:Verify Certificate on User Transcript for non certification courses
+2020-08-04T16:29:14.638 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCTranscriptTest
+2020-08-04T16:29:14.639 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:29:14.639 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:29:14.640 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-572:Verify Certificate on User Transcript as per customize Certificate setting at org level
+2020-08-04T16:29:14.643 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCTranscriptTest
+2020-08-04T16:29:14.644 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:29:14.644 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:32:16.087 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-496:Verify Catalog - Course with Closed Enrollment
+2020-08-04T16:32:16.089 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.learner.LCCatalogTest
+2020-08-04T16:32:16.089 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1685)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1677)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+org.testng.TestRunner.privateRun(TestRunner.java:782)
+org.testng.TestRunner.run(TestRunner.java:632)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+org.testng.SuiteRunner.run(SuiteRunner.java:268)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+org.testng.TestNG.run(TestNG.java:1064)
+org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+2020-08-04T16:32:16.090 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2020-08-04T16:32:16.160 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Completed executing test Test
+2020-08-04T16:32:16.161 [iel] INFO  [com.iel.automation.library.TestBase] -
+				In after Suite method 
+2020-08-04T16:32:17.209 [iel] INFO  [com.iel.automation.library.TestBase] -
+				WebDriver session is quited successully
+2020-08-04T16:32:17.209 [iel] INFO  [com.iel.automation.library.TestBase] -
+				WebDriver session is quited successully
+2020-08-04T16:32:17.264 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2020-08-04T16:32:17.264 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2020-08-04T16:32:17.264 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2020-08-04T16:32:17.264 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Suite Name iLMS_OrgAdmin_testng.xml
+2020-08-04T16:32:17.279 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Environment is : Staging
+2020-08-04T16:32:18.259 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Using chromedriver 84.0.4147.30 (since Google Chrome 84 is installed in your machine)
+2020-08-04T16:32:18.279 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Exporting webdriver.chrome.driver as C:\Users\shreyas.khandekar\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe
+2020-08-04T16:32:22.312 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Chrome browser is launched
+2020-08-04T16:32:22.312 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Browser instance created
+2020-08-04T16:32:23.572 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				About to begin executing Test Test
+2020-08-04T16:32:24.390 [iel] INFO  [com.iel.automation.library.TestBase] -
+				No need to login for this class test cases : OrgAdminLoginPageTest
+2020-08-04T16:32:24.396 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-2909, 2910 :Verify Admin login page
+2020-08-04T16:32:24.402 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Author assigned is :Suraiya
+2020-08-04T16:32:24.404 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Category assigned is :Low
+2020-08-04T16:32:24.405 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Category assigned is :iLMS_Regression
+2020-08-04T16:32:24.422 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Extent report started
+2020-08-04T16:32:24.425 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.OrgAdminLoginPageTest
+2020-08-04T16:32:24.437 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test case Skipped
+2020-08-04T16:32:24.439 [iel] INFO  [com.iel.automation.library.PageBase] -
+				In loginAfterTestFailedOrSkipped method for Admin
+2020-08-04T16:32:24.498 [iel] INFO  [com.iel.automation.pages.UserLoginPage] -
+				UserName TextBox is not Present
+2020-08-04T16:32:25.238 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-2912, 2913, 2914, 2915,2916 :Verify Admin login page for invalid/ valid data 
+2020-08-04T16:32:25.238 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Author assigned is :Suraiya
+2020-08-04T16:32:25.239 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Category assigned is :Low
+2020-08-04T16:32:25.240 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Category assigned is :iLMS_Regression
+2020-08-04T16:32:25.240 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Extent report started
+2020-08-04T16:32:25.242 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.OrgAdminLoginPageTest
+2020-08-04T16:32:25.243 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test case Skipped
+2020-08-04T16:32:25.244 [iel] INFO  [com.iel.automation.library.PageBase] -
+				In loginAfterTestFailedOrSkipped method for Admin
+2020-08-04T16:32:25.274 [iel] INFO  [com.iel.automation.pages.UserLoginPage] -
+				UserName TextBox is not Present

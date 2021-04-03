@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="iLMS_Learningpath" verbose="1">
+	<test name="Test">
+		<!-- <groups> <run> <exclude name="EndToEnd"></exclude> </run> </groups> -->
+		<classes>
+			<class
+				name="com.iel.automation.testcases.orgadmin.courses.EnhancedLearningPathTest">
+
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+

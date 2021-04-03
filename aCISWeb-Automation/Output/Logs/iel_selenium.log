@@ -1,0 +1,114 @@
+2020-08-05T20:49:27.761 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Exception occured in executing test case : The markup declarations contained or pointed to by the document type declaration must be well-formed.
+2020-08-05T20:49:29.786 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\
+2020-08-05T20:49:31.793 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\
+2020-08-05T20:49:31.794 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2020-08-05T20:49:32.462 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Loading app config file
+2020-08-05T20:49:32.463 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2020-08-05T20:49:32.464 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Loading app config file
+2020-08-05T20:49:32.464 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Suite Name null
+2020-08-05T20:49:34.149 [iel] INFO  [com.acis.automation.utilities.IelListener] -
+				About to begin executing Test Test
+2020-08-05T20:49:34.189 [iel] INFO  [com.acis.automation.utilities.IelListener] -
+				Completed executing test Test
+2020-08-05T20:49:34.191 [iel] INFO  [com.acis.automation.library.TestBase] -
+				In after Suite method 
+2020-08-05T20:49:34.192 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Exception Occured while doing logOut  :
+2020-08-05T20:49:34.192 [iel] INFO  [com.acis.automation.utilities.AcisException] -
+				In Custom exception class
+2020-08-05T20:51:21.952 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Exception occured in executing test case : The markup declarations contained or pointed to by the document type declaration must be well-formed.
+2020-08-05T20:51:21.959 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\
+2020-08-05T20:51:23.961 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\
+2020-08-05T20:51:23.970 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2020-08-05T20:51:24.462 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Loading app config file
+2020-08-05T20:51:24.462 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2020-08-05T20:51:24.464 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Loading app config file
+2020-08-05T20:51:24.464 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Suite Name null
+2020-08-05T20:51:26.375 [iel] INFO  [com.acis.automation.utilities.IelListener] -
+				About to begin executing Test Test
+2020-08-05T20:51:26.425 [iel] INFO  [com.acis.automation.utilities.IelListener] -
+				Completed executing test Test
+2020-08-05T20:51:26.428 [iel] INFO  [com.acis.automation.library.TestBase] -
+				In after Suite method 
+2020-08-05T20:51:26.431 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Exception Occured while doing logOut  :
+2020-08-05T20:51:26.434 [iel] INFO  [com.acis.automation.utilities.AcisException] -
+				In Custom exception class
+2020-08-05T20:54:06.582 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Exception occured in executing test case : The markup declarations contained or pointed to by the document type declaration must be well-formed.
+2020-08-05T20:54:06.595 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\
+2020-08-05T20:54:08.598 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\
+2020-08-05T20:54:08.607 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2020-08-05T20:54:08.903 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Loading app config file
+2020-08-05T20:54:08.904 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2020-08-05T20:54:08.906 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Loading app config file
+2020-08-05T20:54:08.906 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Suite Name null
+2020-08-05T20:54:09.639 [iel] INFO  [com.acis.automation.utilities.IelListener] -
+				About to begin executing Test Test
+2020-08-05T20:54:09.680 [iel] INFO  [com.acis.automation.utilities.IelListener] -
+				Completed executing test Test
+2020-08-05T20:54:09.684 [iel] INFO  [com.acis.automation.library.TestBase] -
+				In after Suite method 
+2020-08-05T20:54:09.684 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Exception Occured while doing logOut  :
+2020-08-05T20:54:09.685 [iel] INFO  [com.acis.automation.utilities.AcisException] -
+				In Custom exception class
+2020-08-05T20:56:10.633 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_Learner_testng.xml]
+2020-08-05T20:56:13.688 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\
+2020-08-05T20:56:15.693 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\
+2020-08-05T20:56:15.704 [iel] INFO  [com.acis.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :C:\SFramework\iLMSWeb-Automation-20200803T081154Z-001\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2020-08-05T20:56:16.029 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Loading app config file
+2020-08-05T20:56:16.030 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2020-08-05T20:56:16.031 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Loading app config file
+2020-08-05T20:56:16.032 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Suite Name iLMS_Learner_testng.xml
+2020-08-05T20:56:16.855 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Environment is : Staging
+2020-08-05T20:56:18.966 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Using chromedriver 84.0.4147.30 (since Google Chrome 84 is installed in your machine)
+2020-08-05T20:56:19.010 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Exporting webdriver.chrome.driver as C:\Users\shreyas.khandekar\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe
+2020-08-05T20:56:25.939 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Chrome browser is launched
+2020-08-05T20:56:25.939 [iel] INFO  [com.acis.automation.library.TestBase] -
+				Browser instance created
+2020-08-05T20:56:28.824 [iel] INFO  [com.acis.automation.utilities.IelListener] -
+				About to begin executing Test Test
+2020-08-05T20:56:28.918 [iel] INFO  [com.acis.automation.utilities.IelListener] -
+				Completed executing test Test
+2020-08-05T20:56:28.924 [iel] INFO  [com.acis.automation.library.TestBase] -
+				In after Suite method 
+2020-08-05T20:56:30.152 [iel] INFO  [com.acis.automation.library.TestBase] -
+				WebDriver session is quited successully
+2020-08-05T20:56:30.153 [iel] INFO  [com.acis.automation.library.TestBase] -
+				WebDriver session is quited successully

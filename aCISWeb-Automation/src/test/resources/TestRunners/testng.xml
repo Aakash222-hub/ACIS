@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><suite allow-return-values="false" configfailurepolicy="continue" data-provider-thread-count="10" group-by-instances="false" guice-stage="DEVELOPMENT" junit="false" name="AllILMSSuites" parallel="none" preserve-order="true" skipfailedinvocationcounts="false" thread-count="5" verbose="1">
+	<listeners>
+		<listener class-name="com.acis.automation.utilities.SimpleSuiteAlterer"/>
+		<listener class-name="com.acis.automation.utilities.RetryListner"/>
+		<listener class-name="com.acis.automation.utilities.IelListener"/>
+	</listeners>
+	<suite-files>
+		<!-- <suite-file path="iLMS_Learningpath_testng.xml" /> -->
+		<suite-file path="iLMS_Learner_testng.xml"/>
+		<!-- <suite-file path="iLMS_OrgAdmin_testng.xml"/> -->
+		<!-- <suite-file path="iLMS_MasterSuperAdmin_testng.xml"/> -->
+	</suite-files>
+</suite>

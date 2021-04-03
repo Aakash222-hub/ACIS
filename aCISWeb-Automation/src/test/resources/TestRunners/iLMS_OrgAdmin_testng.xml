@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="iLMS_OrgAdmin" verbose="1">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="iLMS_Regression"></include>
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.iel.automation.testcases.OrgAdminLoginPageTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.courses.CatalogTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.courses.CurriculumTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.courses.IcomposerCourseTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.courses.ILTEventTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.courses.ScormCMI5Test">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.logs.UserEmailLogTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.settings.LearnerCenterTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.settings.LoginHeaderTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.settings.PasswordsTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.courses.EnrollByCSVTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.courses.EnrollByGroupTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.users.GroupsTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.users.RolesTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.users.UsersTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.zoltar.ZoltarDashboardTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.users.RegisterUserTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.reports.AutomatedExportTest">
+			</class>
+			<class
+				name="com.iel.automation.testcases.orgadmin.reports.AnalyticsTest">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+

@@ -1,0 +1,245 @@
+2019-12-12T11:44:45.578 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_OrgAdmin_testng.xml]
+2019-12-12T11:57:50.239 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\
+2019-12-12T11:57:51.791 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\
+2019-12-12T11:58:01.428 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2019-12-12T12:39:37.995 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2019-12-12T12:39:37.996 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2019-12-12T12:39:37.997 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2019-12-12T12:39:37.998 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Suite Name iLMS_OrgAdmin_testng.xml
+2019-12-12T12:39:45.917 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Environment is : Staging
+2019-12-12T12:39:55.245 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-12T12:39:55.519 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Exporting webdriver.chrome.driver as C:\Users\Chandrashekhar.Reddy\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-12T12:40:07.732 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Chrome browser is launched
+2019-12-12T12:40:07.733 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Browser instance created
+2019-12-12T12:42:06.795 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Token code value :- B9XY1hpQ3v3SojmCbK0jS6jIlVlZn5iHvkGnlDqD5H5ulfdpzdOqxC7rRR750Sbm3rPPRP5y2Ps%3d
+2019-12-12T12:42:14.949 [iel] INFO  [com.iel.automation.library.TestBase] -
+				The Browser Detail is : CHROME  78.0.3904.108
+2019-12-12T12:42:14.950 [iel] INFO  [com.iel.automation.library.TestBase] -
+				The Application Build Version is : 5.67.2
+2019-12-12T12:42:15.351 [iel] INFO  [com.iel.automation.pages.orgadmin.users.UsersPage] -
+				Captured all User Email IDs from Find Users: []
+2019-12-12T12:57:45.236 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				About to begin executing Test Test
+2019-12-12T13:02:16.612 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-2909, 2910 :Verify Admin login page
+2019-12-12T13:02:16.661 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.OrgAdminLoginPageTest
+2019-12-12T13:02:16.698 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:744)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+org.testng.SuiteRunner.run(SuiteRunner.java:289)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+org.testng.TestNG.runSuites(TestNG.java:1144)
+org.testng.TestNG.run(TestNG.java:1115)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2019-12-12T13:02:16.700 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2019-12-12T13:02:16.710 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-2912, 2913, 2914, 2915,2916 :Verify Admin login page for invalid/ valid data 
+2019-12-12T13:02:16.748 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.OrgAdminLoginPageTest
+2019-12-12T13:02:16.762 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:744)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+org.testng.SuiteRunner.run(SuiteRunner.java:289)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+org.testng.TestNG.runSuites(TestNG.java:1144)
+org.testng.TestNG.run(TestNG.java:1115)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2019-12-12T13:02:16.764 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2019-12-12T13:02:30.873 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-2926,2927:Create catalog and add course in Catalog
+2019-12-12T13:02:30.911 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				Test Method resides in com.iel.automation.testcases.orgadmin.courses.CatalogTest
+2019-12-12T13:02:30.922 [iel] ERROR [com.iel.automation.library.TestBase] -
+				Exception in skipped test case execution
+com.iel.automation.utilities.IelListener.printTestResults(IelListener.java:242)
+com.iel.automation.utilities.IelListener.onTestSkipped(IelListener.java:141)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1723)
+org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+org.testng.internal.Invoker.registerSkippedTestResult(Invoker.java:1272)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+org.testng.TestRunner.privateRun(TestRunner.java:744)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+org.testng.SuiteRunner.run(SuiteRunner.java:289)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1297)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+org.testng.TestNG.runSuites(TestNG.java:1144)
+org.testng.TestNG.run(TestNG.java:1115)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2019-12-12T13:02:30.926 [iel] INFO  [com.iel.automation.utilities.IelException] -
+				In Custom exception class
+2019-12-12T13:11:12.269 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_OrgAdmin_testng.xml]
+2019-12-12T13:11:15.531 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\
+2019-12-12T13:11:15.535 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\
+2019-12-12T13:11:15.537 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2019-12-12T13:29:22.834 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_OrgAdmin_testng.xml]
+2019-12-12T13:29:26.038 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\
+2019-12-12T13:29:26.044 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\
+2019-12-12T13:29:26.051 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2019-12-12T13:35:04.431 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_OrgAdmin_testng.xml]
+2019-12-12T13:35:07.475 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\
+2019-12-12T13:35:07.475 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\
+2019-12-12T13:35:07.475 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2019-12-12T15:05:36.703 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2019-12-12T15:05:37.607 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2019-12-12T15:05:41.639 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2019-12-12T15:05:47.598 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Suite Name iLMS_OrgAdmin_testng.xml
+2019-12-12T15:48:23.228 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_OrgAdmin_testng.xml]
+2019-12-12T15:48:26.282 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\
+2019-12-12T15:48:26.285 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\
+2019-12-12T15:48:26.287 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2019-12-12T15:51:23.299 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_OrgAdmin_testng.xml]
+2019-12-12T15:51:26.364 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\
+2019-12-12T15:51:26.365 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\
+2019-12-12T15:51:26.366 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2019-12-12T15:53:25.752 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_OrgAdmin_testng.xml]
+2019-12-12T15:53:28.803 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\
+2019-12-12T15:53:28.804 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\
+2019-12-12T15:53:28.804 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2019-12-12T15:53:54.699 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Environment is : Staging
+2019-12-12T15:53:58.294 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Using chromedriver 78.0.3904.105 (since Google Chrome 78 is installed in your machine)
+2019-12-12T15:53:58.403 [iel] INFO  [io.github.bonigarcia.wdm.WebDriverManager] -
+				Exporting webdriver.chrome.driver as C:\Users\Chandrashekhar.Reddy\.m2\repository\webdriver\chromedriver\win32\78.0.3904.105\chromedriver.exe
+2019-12-12T15:54:13.430 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Chrome browser is launched
+2019-12-12T15:54:13.430 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Browser instance created
+2019-12-12T15:54:36.251 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Token code value :- NX0Ivl7qnIviG%2frbV4GNY6jIlVlZn5iHvkGnlDqD5H5ulfdpzdOqxP0TPgG5a4VOXYlGS0MJ75I%3d
+2019-12-12T15:54:41.261 [iel] INFO  [com.iel.automation.library.TestBase] -
+				The Browser Detail is : CHROME  78.0.3904.108
+2019-12-12T15:54:41.262 [iel] INFO  [com.iel.automation.library.TestBase] -
+				The Application Build Version is : 5.67.2
+2019-12-12T15:54:41.289 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				About to begin executing Test Test
+2019-12-12T15:54:42.770 [iel] INFO  [com.iel.automation.library.TestBase] -
+				No need to login for this class test cases : OrgAdminLoginPageTest
+2019-12-12T15:54:42.793 [iel] INFO  [com.iel.automation.library.TestBase] -
+				 Test case execution startedTC-2909, 2910 :Verify Admin login page
+2019-12-12T15:54:42.797 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Author assigned is :Suraiya
+2019-12-12T15:54:42.798 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Category assigned is :Low
+2019-12-12T15:54:42.798 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Category assigned is :iLMS_Regression
+2019-12-12T15:54:42.814 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Extent report started
+2019-12-12T15:54:42.825 [iel] INFO  [com.iel.automation.utilities.IelListener] -
+				The execution of the main test starts now
+2019-12-12T15:55:20.842 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Suite List[iLMS_OrgAdmin_testng.xml]
+2019-12-12T15:55:23.917 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\
+2019-12-12T15:55:23.922 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\
+2019-12-12T15:55:23.924 [iel] INFO  [com.iel.automation.utilities.SimpleSuiteAlterer] -
+				Old Output files Deletion successful under folder :D:\iLMSAutomation\iLMSWeb-Automation\Output\HtmlReports\Screenshots\
+2019-12-12T15:57:37.608 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2019-12-12T15:57:37.615 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Highlight webElement Flag is set To : false
+2019-12-12T16:14:42.412 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Loading app config file
+2019-12-12T17:17:26.557 [iel] INFO  [com.iel.automation.library.TestBase] -
+				Suite Name iLMS_OrgAdmin_testng.xml

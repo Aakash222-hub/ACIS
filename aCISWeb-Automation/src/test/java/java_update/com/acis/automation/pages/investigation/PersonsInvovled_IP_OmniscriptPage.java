@@ -1,0 +1,1783 @@
+package com.acis.automation.pages.investigation;
+
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.ui.Select;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.Assert;
+
+import com.acis.automation.library.PageBase;
+import com.acis.automation.utilities.AcisException;
+
+public class PersonsInvovled_IP_OmniscriptPage extends PageBase {
+
+	public PersonsInvovled_IP_OmniscriptPage() throws AcisException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	final static Logger logger = LoggerFactory.getLogger(PersonsInvovled_IP_OmniscriptPage.class);
+
+	public static String personName = null;
+	public static String firstName;
+	public static String middleName;
+	public static String lastName;
+	public static int age;
+
+//Dharmesh Changes
+	@FindBy(xpath = "//h1[contains(text(),'Involved')]")
+	WebElement personsInvolvedTitle;
+
+	@FindBy(xpath = "//div[contains(text(),'Intake Person Information')]")
+	WebElement intakePersonInformationLabel;
+
+	@FindBy(xpath = "//button[text()='Create/Add']")
+	WebElement createAddButton;
+
+	@FindBy(xpath = "//button[@slot='iconRight']")
+	WebElement editButton;
+
+	@FindBy(xpath = "(//button[@slot='iconRight'])[2]")
+	WebElement editButtonSecond;
+
+	@FindBy(xpath = "(//button[@slot='iconRight'])[last()]")
+	WebElement editButtonNext;
+
+	@FindBy(xpath = "//span[text()='Role']/../../..//input")
+	WebElement role;
+
+	@FindBy(xpath = "//div[@data-value='Alleged Victim']")
+	WebElement roleAllegedVictim;
+
+	@FindBy(xpath = "//div[@data-value='Alleged Maltreator']")
+	WebElement roleAllegedMaltreator;
+
+	@FindBy(xpath = "//span[contains(text(),'Primary Caregiver')]")
+	WebElement primaryCaregiverText;
+
+	@FindBy(xpath = "(//span[contains(text(),'Primary Caregiver')]/../span)[1]")
+	WebElement primaryCaregiverCheckbox;
+
+	@FindBy(xpath = "//h2[contains(text(),'Involved')]/../../..//*[text()='First Name']/../../..//input")
+	public static WebElement firstNameTextBox;
+
+	@FindBy(xpath = "//h2[contains(text(),'Involved')]/../../..//*[text()='Last Name']/../../..//input")
+	public static WebElement lastNameTextBox;
+
+	@FindBy(xpath = "//h2[contains(text(),'Involved')]/../../..//*[text()='Middle Name']/../../..//input")
+	public static WebElement middleNameTextBox;
+
+	@FindBy(xpath = "//*[text()='First Name']/../..//input")
+	public static WebElement firstNameTextBoxWorkflow;
+
+	@FindBy(xpath = "//*[text()='Last Name']/../..//input")
+	public static WebElement lastNameTextBoxWorkflow;
+
+	@FindBy(xpath = "//*[text()='Middle Name']/../..//input")
+	public static WebElement middleNameTextBoxWorkflow;
+
+	@FindBy(xpath = "//span[text()='Suffix']/../../..//input")
+	WebElement suffix;
+
+	@FindBy(xpath = "//div[@data-label='I']")
+	WebElement suffixI;
+
+	@FindBy(xpath = "//div[@data-label='II']")
+	WebElement suffixII;
+
+	@FindBy(xpath = "//div[@data-label='III']")
+	WebElement suffixIII;
+
+	@FindBy(xpath = "//div[@data-label='IV']")
+	WebElement suffixIV;
+
+	@FindBy(xpath = "//div[@data-label='V']")
+	WebElement suffixV;
+
+	@FindBy(xpath = "//div[@data-label='Jr']")
+	WebElement suffixJr;
+
+	@FindBy(xpath = "//div[@data-label='Sr.']")
+	WebElement suffixSr;
+
+	@FindBy(xpath = "//*[text()='Phone']/../..//input")
+	WebElement phone;
+
+	@FindBy(xpath = "//*[text()='Email']/../../..//input")
+	WebElement emailId;
+
+	@FindBy(xpath = "//*[text()='Street 1']/../../..//input")
+	public static WebElement street1;
+
+	@FindBy(xpath = "//*[text()='Street 2']/../../..//input")
+	public static WebElement street2;
+
+	@FindBy(xpath = "//*[text()='City']/../../..//input")
+	public static WebElement city;
+
+	@FindBy(xpath = "//*[text()='State']/../../..//input")
+	WebElement state;
+
+	@FindBy(xpath = "//*[text()='Country']/../../..//input")
+	WebElement country;
+
+	@FindBy(xpath = "//*[text()='Zip/Postal Code']/../../..//input")
+	WebElement zipCodeTextBox;
+
+	@FindBy(xpath = "//*[text()='Zip/Postal Code']/../..//button")
+	WebElement zipCode_I;
+
+	@FindBy(xpath = "//span[contains(text(),'Primary Address')]")
+	WebElement primaryAddressText;
+
+	@FindBy(xpath = "(//span[contains(text(),'Primary Address')]/../span)[1]")
+	WebElement primaryAddressCheckBox;
+
+	@FindBy(xpath = "(//*[contains(text(),'Date of Birth')]/../..//input)[1]")
+	public static WebElement birthDateTextBox;
+
+	@FindBy(xpath = "//*[text()='20']")
+	WebElement dateBirthdate;
+
+	@FindBy(xpath = "(//*[text()='20'])[2]")
+	WebElement dateBirthdateSecond;
+
+	@FindBy(xpath = "//button[@title='Next Month']")
+	WebElement nextMonth;
+
+	@FindBy(xpath = "//button[@title='Previous Month']")
+	WebElement previousMonth;
+
+	@FindBy(xpath = "//*[text()='Pick a year']/../..//select")
+	WebElement birthdateYearlist;
+
+	@FindBy(xpath = "(//*[text()='Pick a year']/../..//select)[2]")
+	WebElement birthdateYearlistSecond;
+
+	@FindBy(xpath = "//span[contains(text(),'Age')]/../../..//input[@type='text']")
+	WebElement ageAtTimeOfReportTextbox;
+
+	@FindBy(xpath = "//*[text()='Gender']/../../..//input")
+	WebElement gender;
+
+	@FindBy(xpath = "//div[@data-label='Male']")
+	WebElement genderMale;
+
+	@FindBy(xpath = "//div[@data-label='Female']")
+	WebElement genderFemale;
+
+	@FindBy(xpath = "(//*[contains(text(),'Date of Death')]/../..//input)[1]")
+	WebElement deathDateTextbox;
+
+	@FindBy(xpath = "//span[text()='10']")
+	WebElement dateOfDeath;
+
+	@FindBy(xpath = "//span/following-sibling::span[text()='American Indian or Alaska Native']")
+	WebElement race_AmericanIndianAlaskaNative;
+
+	@FindBy(xpath = "//span/following-sibling::span[text()='Asian']")
+	WebElement race_Asian;
+
+	@FindBy(xpath = "//span/following-sibling::span[text()='Black or African American']")
+	WebElement race_BlackAfricanAmerican;
+
+	@FindBy(xpath = "//span/following-sibling::span[text()='Hispanic or Latino']")
+	WebElement race_HispanicOrLatino;
+
+	@FindBy(xpath = "//span/following-sibling::span[text()='Native Hawaiian or Other Pacific Islander']")
+	WebElement race_NativeHawaiian;
+
+	@FindBy(xpath = "//span/following-sibling::span[text()='White']")
+	WebElement race_White;
+
+	@FindBy(xpath = "//*[text()='Unable to Determine']")
+	WebElement race_UnableToDetermine;
+
+	@FindBy(xpath = "(//h2[contains(text(),'Involved')]/../..//*[text()='Save'])[1]")
+	WebElement saveButton;
+
+	@FindBy(xpath = "//iframe[@id='mytextarea_ifr']")
+	WebElement narrativeIframe;
+
+	@FindBy(xpath = "//body[@data-id='mytextarea']//p")
+	WebElement narrative_textarea;
+
+	@FindBy(xpath = " //*[text()='Next']")
+	WebElement nextButton_PersonsInvovled;
+
+	@FindBy(xpath = "//span[text()='down icon']/parent::*/parent::button")
+	WebElement downArrowPersonRecord;
+
+	@FindBy(xpath = "//span[text()='Edit']/../..//a")
+	WebElement editPersonRecord;
+
+	@FindBy(xpath = "(//span[text()='Role']/../../..//input)[2]")
+	WebElement roleSecond;
+
+	@FindBy(xpath = "(//div[@data-value='Alleged Victim'])[2]")
+	WebElement roleAllegedVictimSecond;
+
+	@FindBy(xpath = "(//div[@data-value='Alleged Maltreator'])[2]")
+	WebElement roleAllegedMaltreatorSecond;
+
+	@FindBy(xpath = "(//span[text()='Role']/../../..//input)[last()]")
+	WebElement roleNext;
+
+	@FindBy(xpath = "(//div[@data-value='Alleged Victim'])[last()]")
+	WebElement roleAllegedVictimNext;
+
+	@FindBy(xpath = "(//div[@data-value='Alleged Maltreator'])[last()]")
+	WebElement roleAllegedMaltreatorNext;
+
+	@FindBy(xpath = "(//span[contains(text(),'Primary Caregiver')])[2]")
+	WebElement primaryCaregiverTextSecond;
+
+	@FindBy(xpath = "((//span[contains(text(),'Primary Caregiver')])[2]/../span)[1]")
+	WebElement primaryCaregiverCheckboxSecond;
+
+	@FindBy(xpath = "(//h2[contains(text(),'Involved')]/../../..//*[text()='First Name']/../../..//input)[2]")
+	public static WebElement firstNameTextBoxSecond;
+
+	@FindBy(xpath = "(//*[text()='First Name']/../../following-sibling::div//input)[last()]")
+	public static WebElement firstNameTextBoxNext;
+
+	@FindBy(xpath = "(//h2[contains(text(),'Involved')]/../../..//*[text()='Last Name']/../../..//input)[2]")
+	public static WebElement lastNameTextBoxSecond;
+
+	@FindBy(xpath = "(//*[text()='Last Name']/../../following-sibling::div//input)[last()]")
+	public static WebElement lastNameTextBoxNext;
+
+	@FindBy(xpath = "(//h2[contains(text(),'Involved')]/../../..//*[text()='Middle Name']/../../..//input)[2]")
+	public static WebElement middleNameTextBoxSecond;
+
+	@FindBy(xpath = "(//*[text()='Middle Name']/../../following-sibling::div//input)[last()]")
+	public static WebElement middleNameTextBoxNext;
+
+	@FindBy(xpath = "(//span[text()='Suffix']/../../..//input)[2]")
+	WebElement suffixSecond;
+
+	@FindBy(xpath = "(//div[@data-label='I'])[2]")
+	WebElement suffixISecond;
+
+	@FindBy(xpath = "(//div[@data-label='II'])[2]")
+	WebElement suffixIISecond;
+
+	@FindBy(xpath = "(//div[@data-label='III'])[2]")
+	WebElement suffixIIISecond;
+
+	@FindBy(xpath = "(//div[@data-label='IV'])[2]")
+	WebElement suffixIVSecond;
+
+	@FindBy(xpath = "(//div[@data-label='V'])[2]")
+	WebElement suffixVSecond;
+
+	@FindBy(xpath = "(//div[@data-label='Jr'])[2]")
+	WebElement suffixJrSecond;
+
+	@FindBy(xpath = "(//div[@data-label='Sr.'])[2]")
+	WebElement suffixSrSecond;
+
+	@FindBy(xpath = "(//*[text()='Phone']/../..//input)[2]")
+	WebElement phoneSecond;
+
+	@FindBy(xpath = "(//*[text()='Email']/../../..//input)[2]")
+	WebElement emailIdSecond;
+
+	@FindBy(xpath = "(//*[text()='Street 1']/../../..//input)[2]")
+	public static WebElement street1Second;
+
+	@FindBy(xpath = "(//*[text()='Street 2']/../../..//input)[2]")
+	public static WebElement street2Second;
+
+	@FindBy(xpath = "(//*[text()='City']/../../..//input)[2]")
+	public static WebElement citySecond;
+
+	@FindBy(xpath = "(//*[text()='State']/../../..//input)[2]")
+	WebElement stateSecond;
+
+	@FindBy(xpath = "(//*[text()='Country']/../../..//input)[2]")
+	WebElement countrySecond;
+
+	@FindBy(xpath = "(//*[text()='Zip/Postal Code']/../../..//input)[2]")
+	WebElement zipCodeTextBoxSecond;
+
+	@FindBy(xpath = "(//span[contains(text(),'Primary Address')])[2]")
+	WebElement primaryAddressTextSecond;
+
+	@FindBy(xpath = "((//span[contains(text(),'Primary Address')])[2]/../span)[1]")
+	WebElement primaryAddressCheckBoxSecond;
+
+	@FindBy(xpath = "(//*[contains(text(),'Date of Birth')]/../..//input)[3]")
+	public static WebElement birthDateTextBoxSecond;
+
+	@FindBy(xpath = "(//*[text()='Age at Time of Report']/../..//input[@type='tel'])[2]")
+	WebElement ageAtTimeOfReportTextboxSecond;
+
+	@FindBy(xpath = "(//*[text()='Gender']/../../..//input)[2]")
+	WebElement genderSecond;
+
+	@FindBy(xpath = "(//div[@data-label='Male'])[2]")
+	WebElement genderMaleSecond;
+
+	@FindBy(xpath = "(//div[@data-label='Female'])[2]")
+	WebElement genderFemaleSecond;
+
+	@FindBy(xpath = "(//*[contains(text(),'Date of Death')]/../..//input)[2]")
+	WebElement deathDateTextboxSecond;
+
+	@FindBy(xpath = "(//span/following-sibling::span[text()='American Indian or Alaska Native'])[2]")
+	WebElement race_AmericanIndianAlaskaNativeSecond;
+
+	@FindBy(xpath = "(//span/following-sibling::span[text()='Asian'])[2]")
+	WebElement race_AsianSecond;
+
+	@FindBy(xpath = "(//span/following-sibling::span[text()='Black or African American'])[2]")
+	WebElement race_BlackAfricanAmericanSecond;
+
+	@FindBy(xpath = "(//span/following-sibling::span[text()='Hispanic or Latino'])[2]")
+	WebElement race_HispanicOrLatinoSecond;
+
+	@FindBy(xpath = "(//span/following-sibling::span[text()='Native Hawaiian or Other Pacific Islander'])[2]")
+	WebElement race_NativeHawaiianSecond;
+
+	@FindBy(xpath = "(//span/following-sibling::span[text()='White'])[2]")
+	WebElement race_WhiteSecond;
+
+	@FindBy(xpath = "(//*[text()='Unable to Determine'])[2]")
+	WebElement race_UnableToDetermineSecond;
+
+	@FindBy(xpath = "(//h2[contains(text(),'Involved')]/../..//*[text()='Save'])[2]")
+	WebElement saveButtonSecond;
+
+	@FindBy(xpath = "(//h2[contains(text(),'Involved')]/../..//*[text()='Save'])[last()]")
+	WebElement saveButtonNext;
+
+	@FindBy(xpath = "//span[text()='Save']")
+	WebElement saveButtonIp;
+
+	@FindBy(xpath = "(//div[@class='slds-size_12-of-12 slds-grid'])[1]")
+	WebElement personAddedFirstrow;
+
+	@FindBy(xpath = "(//div[@class='slds-size_12-of-12 slds-grid'])[2]")
+	WebElement personAddedSecondrow;
+
+	@FindBy(xpath = "(//span[text()='down icon']/parent::*/parent::button)[2]")
+	WebElement downArrowPersonRecordSecond;
+
+	@FindBy(xpath = "(//input[@vlocity_ps-typeahead_typeahead_slds and @type='text'])[last()]")
+	WebElement searchbox;
+
+	@FindBy(xpath = "(//label[text()='Full Name'])[last()]")
+	WebElement fullname;
+
+	@FindBy(xpath = "//a[text()='New']")
+	WebElement New;
+
+	@FindBy(xpath = "//span[@vlocity_ps-typeahead_typeahead_slds and @class='slds-listbox__option-text slds-listbox__option-text_entity']/text()='Name: first last; DOB: 8/19/2000; Age: 20; LKA:  ; Mother's Name: '")
+	WebElement searchRecord;
+
+	@FindBy(xpath = "(//span[contains(text(),'Name:')])[1]")
+	WebElement searchRecord1;
+
+	@FindBy(xpath = "(//*[text()='Investigation Person Information']/../..//button[text()='Cancel'])[last()]")
+	WebElement cancelBtn;
+
+	@FindBy(xpath = "//h1[text()='Person(s) Involved']")
+	WebElement personInvolvedLabel;
+
+	@FindBy(xpath = "//h1[contains(text(),'Establish Relationships')]")
+	WebElement establishRelationshipTitle;
+
+	@FindBy(xpath = "//*[contains(text(),'No existing person records match ')]")
+	WebElement errorPersonSearch;
+
+	@FindBy(xpath = "//span[contains(text(),'here')]/../../button")
+	WebElement linkCreateNewPerson;
+
+	@FindBy(xpath = "//span[text()='Cancel']")
+	WebElement cancelBn;
+
+	@FindBy(xpath = "//*[@title='Close Person Record']")
+	WebElement closePerson;
+
+	@FindBy(xpath = "//span[text()='Refresh Persons']")
+	WebElement refreshPerson;
+
+	@FindBy(xpath = "//*[@title='Close Case Persons']")
+	WebElement closeCasePerson;
+
+	@FindBy(xpath = "(//*[text()='First Name']//..//..//..//input)[1]")
+	WebElement firstNames;
+	
+	@FindBy(xpath = "//span[text()='Search']")
+	WebElement searchButton;
+	
+	@FindBy(xpath = "//table//thead//tr//th[text()='FIRST NAME']")
+	WebElement firstNameVerify;
+	
+
+	@FindBy(xpath = "//button[text()='Close']")
+	WebElement close;
+	
+	@FindBy(xpath = "(//*[text()='Last Name']//..//..//..//input)[1]")
+	WebElement lastNames;
+	
+	@FindBy(xpath = "(//*[text()='Date of Birth']//..//..//..//input)[1]")
+	WebElement dateofBirth;
+
+	@FindBy(xpath = "//span[contains(text(),'Refresh')]")
+	WebElement refreshPersonsButton;
+	
+	@FindBy(xpath = "//*[contains(text(),'details are saved. Close this')]")
+	WebElement saveVerify;
+	
+	@FindBy(xpath = "//*[text()='Close']")
+	WebElement closeButton;
+	
+
+	
+	public By closeVerify = By.xpath("//button[text()='Close']");
+	
+	public By middleNameError = By
+			.xpath("//*[contains(text(),'Middle Name should not include numbers or Special characters')]");
+
+	public By firstNameError = By
+			.xpath("//*[contains(text(),'First Name should not include numbers or Special characters')]");
+
+	public By lastNameError = By
+			.xpath("//*[contains(text(),'Last Name should not include numbers or Special characters')]");
+
+	public By firstNameRequired = By.xpath("//*[text()='First Name']/../../..//*[text()='required']");
+
+	public By lastNameRequired = By.xpath("//*[text()='Last Name']/../../..//*[text()='required']");
+
+	public By zipCode_error = By.xpath("//*[contains(text(),'Zip code must be in 99999 or 99999-9999 format')]");
+
+	public By unableToDetermineError = By
+			.xpath("//*[contains(text(),'Multiple selections are unavailable when unable to determine is selected')]");
+
+	public By birthDateError = By.xpath("//*[contains(text(),'Birthdate Cannot be Greater than Date of Death')]");
+
+	public By deathDateError = By.xpath("//*[contains(text(),'Date of Death Cannot be Future Date')]");
+
+	/**
+	 * verify rows added for persons
+	 * 
+	 * @author amit.kulshreshtha
+	 */
+	public void verifyPersonAdded() throws AcisException, InterruptedException, IOException {
+		waitForElement(personAddedFirstrow);
+		personAddedFirstrow.isDisplayed();
+		waitForElement(personAddedSecondrow);
+		personAddedSecondrow.isDisplayed();
+		logger.info("Persons added are present");
+	}
+
+	/**
+	 * Select state
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+	public void provideState(String option, String stateOption) throws AcisException, InterruptedException {
+		switch (option) {
+		case "first":
+			clickWebElement(state);
+			logger.info("Selected state");
+			scrollingToElementofAPage(driver.findElement(By.xpath("//*[text()='" + stateOption + "']")));
+			driver.findElement(By.xpath("//*[text()='" + stateOption + "']")).click();
+			;
+
+			logger.info("Selected state option");
+			break;
+		case "second":
+			clickWebElement(stateSecond);
+			logger.info("Selected state");
+			scrollingToElementofAPage(driver.findElement(By.xpath("(//*[text()='" + stateOption + "'])[2]")));
+			driver.findElement(By.xpath("(//*[text()='" + stateOption + "'])[2]")).click();
+			logger.info("Selected state option");
+			break;
+		}
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Select country
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void provideCountry(String option, String countryOption) throws AcisException {
+		switch (option) {
+		case "first":
+			logger.info("Selecting country");
+			scrollingToElementofAPage(country);
+			clickWebElement(country);
+			scrollingToElementofAPage(driver.findElement(By.xpath("//*[text()='" + countryOption + "']")));
+			driver.findElement(By.xpath("//*[text()='" + countryOption + "']")).click();
+			logger.info("Selected country");
+			break;
+		case "second":
+			logger.info("Selectingcountry");
+			scrollingToElementofAPage(country);
+			clickWebElement(countrySecond);
+			scrollingToElementofAPage(driver.findElement(By.xpath("(//*[text()='" + countryOption + "'])[2]")));
+			driver.findElement(By.xpath("(//*[text()='" + countryOption + "'])[2]")).click();
+			logger.info("Select country");
+			break;
+		}
+		waitForPageLoadTill(5);
+
+	}
+
+	/**
+	 * Verify First Name and Last name are required field
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void verifyFirstnameLastnamerequired() throws AcisException {
+		clickWebElement(saveButton);
+		waitAndVerifyElement(firstNameRequired);
+		waitAndVerifyElement(lastNameRequired);
+		logger.info("Verify First Name and Last name are required field");
+	}
+
+	/**
+	 * Verify first name , middle name, last name can not accept numbers, symbols
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void verifyAllNamesNotAcceptNumbers() throws AcisException {
+		enterText(firstNameTextBox, "Demo@123");
+		enterText(middleNameTextBox, "DEmo2#2");
+		enterText(lastNameTextBox, "Demo$%5");
+
+		waitAndVerifyElement(firstNameError);
+		waitAndVerifyElement(middleNameError);
+		waitAndVerifyElement(lastNameError);
+		logger.info("Verify first name , middle name, last name can not accept numbers, symbols");
+
+		firstNameTextBox.clear();
+		middleNameTextBox.clear();
+		lastNameTextBox.clear();
+
+	}
+
+	/**
+	 * Set First name, middle name, last name
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void setAllNames(String option, String firstName, String middleName, String lastName) throws AcisException {
+		switch (option) {
+		case "first":
+			logger.info("Entering First name, middle name, last name");
+			waitForElement(firstNameTextBox);
+			enterText(firstNameTextBox, firstName);
+			enterText(middleNameTextBox, middleName);
+			enterText(lastNameTextBox, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		case "second":
+			logger.info("Entering First name, middle name, last name");
+			waitForElement(firstNameTextBoxSecond);
+			enterText(firstNameTextBoxSecond, firstName);
+			enterText(middleNameTextBoxSecond, middleName);
+			enterText(lastNameTextBoxSecond, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		case "next":
+			waitForElement(firstNameTextBoxNext);
+			logger.info("Entering First name, middle name, last name");
+			enterText(firstNameTextBoxNext, firstName);
+			enterText(middleNameTextBoxNext, middleName);
+			enterText(lastNameTextBoxNext, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		}
+		waitForPageLoadTill(5);
+	}
+
+	public void getPersonName() {
+
+		String[] fullName = personName.split(" ");
+		firstName = fullName[0];
+		middleName = fullName[1];
+		lastName = fullName[3];
+
+	}
+
+	/**
+	 * Give suffix
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+
+	public void prvoideSuffix(String option, String suffixOption) throws AcisException {
+		if (option.equals("first")) {
+			clickWebElement(suffix);
+
+			switch (suffixOption) {
+			case "I":
+				clickWebElement(suffixI);
+				logger.info("Set suffix I");
+				break;
+
+			case "II":
+				clickWebElement(suffixII);
+				logger.info("Set suffix II");
+				break;
+
+			case "III":
+				clickWebElement(suffixIII);
+				logger.info("Set suffix III");
+				break;
+
+			case "IV":
+				clickWebElement(suffixIV);
+				logger.info("Set suffix IV");
+				break;
+
+			case "V":
+				clickWebElement(suffixV);
+				logger.info("Set suffix V");
+				break;
+
+			case "Jr":
+				clickWebElement(suffixJr);
+				logger.info("Set suffix Jr");
+				break;
+
+			case "Sr":
+				clickWebElement(suffixSr);
+				logger.info("Set suffix Sr");
+				break;
+
+			default:
+				logger.info("No matching suffix value");
+				break;
+			}
+		} else if (option.equals("second")) {
+			clickWebElement(suffixSecond);
+
+			switch (suffixOption) {
+			case "I":
+				clickWebElement(suffixISecond);
+				logger.info("Set suffix I");
+				break;
+
+			case "II":
+				clickWebElement(suffixIISecond);
+				logger.info("Set suffix II");
+				break;
+
+			case "III":
+				clickWebElement(suffixIIISecond);
+				logger.info("Set suffix III");
+				break;
+
+			case "IV":
+				clickWebElement(suffixIVSecond);
+				logger.info("Set suffix IV");
+				break;
+
+			case "V":
+				clickWebElement(suffixVSecond);
+				logger.info("Set suffix V");
+				break;
+
+			case "Jr":
+				clickWebElement(suffixJrSecond);
+				logger.info("Set suffix Jr");
+				break;
+
+			case "Sr":
+				clickWebElement(suffixSrSecond);
+				logger.info("Set suffix Sr");
+				break;
+
+			default:
+				logger.info("No matching suffix value");
+				break;
+			}
+		}
+		logger.info("Set suffix");
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Set contact information : phone and email
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void provideContactInformation(String option, String phoneOption, String emailIDOption)
+			throws AcisException {
+		switch (option) {
+		case "first":
+			logger.info("Entering contact information : phone and email");
+			enterTextUsingJavascript(phone, phoneOption);
+			enterText(emailId, emailIDOption);
+			logger.info("Set contact information : phone and email");
+			break;
+		case "second":
+			logger.info("Entering contact information : phone and email");
+			enterTextUsingJavascript(phoneSecond, phoneOption);
+			enterText(emailIdSecond, emailIDOption);
+			logger.info("Set contact information : phone and email");
+			break;
+		}
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Select role
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void provideRole(String option, String roleoption) throws AcisException {
+
+		if (option.equals("first")) {
+			clickWebElement(role);
+			logger.info("Clicked on role");
+			switch (roleoption) {
+			case "Alleged Victim":
+				clickWebElement(roleAllegedVictim);
+				logger.info("Role Alleged Victim Selected");
+				break;
+
+			case "Alleged Maltreator":
+				clickWebElement(roleAllegedMaltreator);
+				logger.info("Role Alleged Maltreator Selected");
+				break;
+
+			default:
+				logger.info("No matching role option");
+				break;
+			}
+
+		} else if (option.equals("second")) {
+			clickWebElement(roleSecond);
+			logger.info("Clicked on role");
+			switch (roleoption) {
+			case "Alleged Victim":
+				clickWebElement(roleAllegedVictimSecond);
+				logger.info("Role Alleged Victim Selected");
+				break;
+
+			case "Alleged Maltreator":
+				clickWebElement(roleAllegedMaltreatorSecond);
+				logger.info("Role Alleged Maltreator Selected");
+				break;
+
+			default:
+				logger.info("No matching role option");
+				break;
+			}
+
+		} else if (option.equals("next")) {
+			clickWebElement(roleNext);
+			logger.info("Clicked on role");
+			switch (roleoption) {
+			case "Alleged Victim":
+				clickWebElement(roleAllegedVictimNext);
+				logger.info("Role Alleged Victim Selected");
+				break;
+
+			case "Alleged Maltreator":
+				clickWebElement(roleAllegedMaltreatorNext);
+				logger.info("Role Alleged Maltreator Selected");
+				break;
+
+			default:
+				logger.info("No matching role option");
+				break;
+			}
+
+		}
+
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Select gender
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void prvoideGender(String option, String genderOption) throws AcisException {
+		if (option.equals("first")) {
+			clickWebElement(gender);
+			logger.info("Clicked on gender dropdown");
+			switch (genderOption) {
+			case "Male":
+				clickWebElement(genderMale);
+				logger.info("Gender Male Selected");
+				break;
+
+			case "Female":
+				clickWebElement(genderFemale);
+				logger.info("Gender Female Selected");
+				break;
+
+			default:
+				logger.info("No matching gender option");
+				break;
+			}
+			logger.info("Select gender");
+		} else if (option.equals("second")) {
+			clickWebElement(genderSecond);
+			logger.info("Clicked on gender dropdown");
+			switch (genderOption) {
+			case "Male":
+				clickWebElement(genderMaleSecond);
+				logger.info("Gender Male Selected");
+				break;
+
+			case "Female":
+				clickWebElement(genderFemaleSecond);
+				logger.info("Gender Female Selected");
+				break;
+
+			default:
+				logger.info("No matching gender option");
+				break;
+			}
+			logger.info("Select gender");
+		}
+
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Verify Error : Zip code must be in 99999 or 99999-9999 format
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void verifyZipCodeFormat(String zipCodeValue) throws AcisException {
+
+		enterText(zipCodeTextBox, zipCodeValue);
+		hoverOverElement(zipCode_I);
+
+		waitAndVerifyElement(zipCode_error);
+		logger.info("Verify Error : Zip code must be in 99999 or 99999-9999 format");
+
+	}
+
+	/**
+	 * Click Primary address check-box
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void clickPrimaryAddress() throws AcisException {
+		logger.info("Clicking Primary address check-box");
+		waitForElement(primaryAddressText);
+		scrollingToElementofAPage(primaryAddressCheckBox);
+		clickWebElemntUsingJavascriptExecutor(primaryAddressCheckBox);
+		logger.info("Clicked Primary address check-box");
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Click Primary Care-giver check-box
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void clickPrimaryCaregiver() throws AcisException {
+		logger.info("Clicking Primary Caregiver check-box");
+		waitForElement(primaryCaregiverText);
+		clickWebElemntUsingJavascriptExecutor(primaryCaregiverCheckbox);
+		logger.info("Clicked Primary Caregiver check-box");
+	}
+
+	/**
+	 * Verify error : Birthdate Cannot be Greater than Date of Death
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void verifyDateofDeathEarlierError() throws AcisException {
+		clickWebElement(birthDateTextBox);
+		clickWebElement(dateBirthdate);
+		clickWebElement(deathDateTextbox);
+		clickWebElement(dateOfDeath);
+
+		waitAndVerifyElement(birthDateError);
+		logger.info("Verify error : Birthdate Cannot be Greater than Date of Death");
+
+		birthDateTextBox.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+		deathDateTextbox.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+	}
+
+	/**
+	 * Verify error : Date of death can not be future date
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void verifyFutureDeathError() throws AcisException {
+		clickWebElement(deathDateTextbox);
+		clickWebElement(nextMonth);
+		clickWebElement(dateOfDeath);
+
+		waitAndVerifyElement(deathDateError);
+		logger.info("Verify error : Date of death can not be future date");
+
+		deathDateTextbox.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+
+	}
+
+	/**
+	 * Verify error :Multiple selections are unavailable when unable to determine is
+	 * selected
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void verifyMultipleSelectionError() throws AcisException {
+
+		logger.info("Verifying error :Multiple selections are unavailable when unable to determine is selected");
+		clickWebElement(race_AmericanIndianAlaskaNative);
+		clickWebElement(race_Asian);
+		clickWebElement(race_HispanicOrLatino);
+		clickWebElement(race_UnableToDetermine);
+
+		waitAndVerifyElement(unableToDetermineError);
+		logger.info("Verified error :Multiple selections are unavailable when unable to determine is selected");
+
+		clickWebElement(race_AmericanIndianAlaskaNative);
+		clickWebElement(race_Asian);
+		clickWebElement(race_HispanicOrLatino);
+		clickWebElement(race_UnableToDetermine);
+		waitForPageLoadTill(5);
+		logger.info("Unchecked checkbox");
+	}
+
+	/**
+	 * Verify all options under Race
+	 * 
+	 * @author mrunal.s.tilekar
+	 */
+	public void verifyRaceOptions() {
+
+		waitForElement(race_AmericanIndianAlaskaNative);
+		waitForElement(race_Asian);
+		waitForElement(race_BlackAfricanAmerican);
+		waitForElement(race_HispanicOrLatino);
+		waitForElement(race_NativeHawaiian);
+		waitForElement(race_UnableToDetermine);
+		waitForElement(race_White);
+		logger.info("Verified all options under Race");
+	}
+
+	/**
+	 * Enter Birth-date
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void provideBirthdate(String option, String year) throws AcisException {
+		switch (option) {
+		case "first":
+			logger.info("Entering BirthDate");
+			scrollingToElementofAPage(birthDateTextBox);
+			clickWebElement(birthDateTextBox);
+			clickWebElement(birthdateYearlist);
+
+			Select birthyearList = new Select(birthdateYearlist);
+			List<WebElement> elementCount = birthyearList.getOptions();
+			int iSize = elementCount.size();
+
+			for (int i = 0; i < iSize; i++) {
+				String birthyearValue = elementCount.get(i).getText().trim();
+				System.out.println(birthyearValue);
+				if (birthyearValue.equalsIgnoreCase(year)) {
+					birthyearList.selectByVisibleText(year);
+					logger.info(" matching birthyear Value");
+					break;
+				} else {
+					System.out.println("No matching birthyear Value");
+					logger.info("No matching birthyear Value");
+				}
+
+			}
+
+			clickWebElement(dateBirthdate);
+			logger.info("BirthDate entered");
+			break;
+
+		case "second":
+			logger.info("Entering BirthDate");
+			scrollingToElementofAPage(birthDateTextBoxSecond);
+			clickWebElement(birthDateTextBoxSecond);
+			clickWebElement(birthdateYearlistSecond);
+
+			Select birthyearLists = new Select(birthdateYearlistSecond);
+			List<WebElement> elementCounts = birthyearLists.getOptions();
+			int iSizes = elementCounts.size();
+
+			for (int i = 0; i < iSizes; i++) {
+				String birthyearValue = elementCounts.get(i).getText().trim();
+				System.out.println(birthyearValue);
+				if (birthyearValue.equalsIgnoreCase(year)) {
+					birthyearLists.selectByVisibleText(year);
+					logger.info(" matching birthyear Value");
+					break;
+				} else {
+					System.out.println("No matching birthyear Value");
+					logger.info("No matching birthyear Value");
+				}
+			}
+
+			clickWebElement(dateBirthdateSecond);
+			logger.info("BirthDate entered");
+			break;
+		}
+
+		waitForPageLoadTill(5);
+
+	}
+
+	/**
+	 * Enter future birth-date
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+	public void provideFutureBirthDate(String year) throws AcisException, InterruptedException {
+		logger.info("Entering future birth-date");
+		scrollingToElementofAPage(birthDateTextBox);
+		waitForPageLoadTill(5);
+		clickWebElement(birthDateTextBox);
+		clickWebElement(birthdateYearlist);
+
+		Select birthyearList = new Select(birthdateYearlist);
+		List<WebElement> elementCount = birthyearList.getOptions();
+		int iSize = elementCount.size();
+
+		for (int i = 0; i < iSize; i++) {
+			String birthyearValue = elementCount.get(i).getText().trim();
+			System.out.println(birthyearValue);
+			if (birthyearValue.equalsIgnoreCase(year)) {
+				birthyearList.selectByVisibleText(year);
+				logger.info(" matching birthyear Value");
+				break;
+			} else {
+				System.out.println("No matching birthyear Value");
+				logger.info("No matching birthyear Value");
+			}
+		}
+
+		clickWebElement(nextMonth);
+		clickWebElement(dateBirthdate);
+		age = 0;
+	}
+
+	/**
+	 * calculate age from birth-date
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws ParseException
+	 */
+
+	public void calculateAge() throws ParseException {
+
+		String birthdate = birthDateTextBox.getAttribute("value");
+
+		LocalDate today = LocalDate.now();
+		System.out.println("Today's Date : " + today);
+
+		DateFormat df = new SimpleDateFormat("MM-dd-yyyy");
+		Date d1 = df.parse(birthdate);
+		String regBirthdateDate = df.format(d1);
+		System.out.println("Given Birthdate: " + regBirthdateDate);
+
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy");
+		LocalDate localDate = LocalDate.parse(regBirthdateDate, formatter);
+		System.out.println("Given birthdate in format: " + localDate);
+		Period p = Period.between(localDate, today);
+
+		age = p.getYears();
+
+		System.out.println("Age Caluclated : " + age);
+
+	}
+
+	/**
+	 * Verify age as per given birth-date
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+	public void verifyAge() throws AcisException, InterruptedException {
+		System.out.println("Global Age var value : " + age);
+		waitAndVerifyElement(By.xpath("//div[text()='" + age + "']"));
+		logger.info("Age is as expected  !");
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Click on Create/Add button
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+	public void clickCreateAddButton() throws AcisException, InterruptedException {
+		logger.info("Clicking on Create/Add button");
+		waitForPageLoad();
+		waitForPageLoadTill(5);
+		waitForElement(createAddButton);
+		clickWebElement(createAddButton);
+		logger.info("Click on Create/Add button");
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Click on edit button
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void clickEditButton(String option) throws AcisException {
+		switch (option) {
+		case "first":
+			logger.info("Clicking on edit button");
+			clickWebElement(editButton);
+			logger.info("Clicked on edit button");
+			break;
+		case "second":
+			logger.info("Clicking on edit button");
+			clickWebElement(editButtonSecond);
+			logger.info("Clicked on edit button");
+			break;
+		case "next":
+			logger.info("Clicking on edit button");
+			clickWebElement(editButtonNext);
+			logger.info("Clicked on edit button");
+			break;
+		default:
+			logger.info("Edit button not found");
+		}
+		waitForPageLoadTill(5);
+
+	}
+
+	/**
+	 * Click on save button
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+	public void clickSaveButton(String option) throws AcisException {
+		switch (option) {
+		case "first":
+			logger.info("Clicking on save button");
+			clickWebElemntUsingJavascriptExecutor(saveButton);
+			waitForPageLoadTill(5);
+			logger.info("Clicked on save button");
+			break;
+		case "second":
+			logger.info("Clicking on save button");
+			clickWebElemntUsingJavascriptExecutor(saveButtonSecond);
+			waitForPageLoadTill(5);
+			logger.info("Clicked on save button");
+			break;
+		case "next":
+			logger.info("Clicking on save button");
+			clickWebElemntUsingJavascriptExecutor(saveButtonNext);
+			waitForPageLoadTill(5);
+			logger.info("Clicked on save button");
+			break;
+		case "saveforIp":
+			logger.info("Clicking on save button");
+			clickWebElemntUsingJavascriptExecutor(saveButtonIp);
+			waitForPageLoadTill(5);
+			clickWebElement(close);
+			waitForPageLoadTill(5);
+			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			waitForPageLoadTill(5);
+			jse.executeScript("window.scrollBy(0,900)");
+			clickWebElement(refreshPerson);
+			waitForPageLoadTill(5);
+			logger.info("Clicked on save button");
+			break;
+		}
+		waitForPageLoadTill(5);
+
+	}
+
+	/**
+	 * click on Next button
+	 * 
+	 * @author mrunal.s.tilekar
+	 */
+	public void clickNextButton() throws AcisException, InterruptedException {
+		logger.info("Clicking on Next button");
+		Actions act = new Actions(driver);
+		act.sendKeys(Keys.CONTROL).sendKeys(Keys.END).build().perform();
+
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		waitForPageLoadTill(5);
+		jse.executeScript("window.scrollBy(0,900)");
+		waitForPageLoadTill(5);
+		waitForElementClickable(nextButton_PersonsInvovled);
+		clickWebElement(nextButton_PersonsInvovled);
+		waitForPageLoad();
+		waitForPageLoadTill(5);
+		logger.info("Clicked on Next button");
+		waitForElement(establishRelationshipTitle);
+
+	}
+
+	/**
+	 * Click on edit button of 1st person record from table
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 * @throws IOException
+	 */
+	public void clickEditFirstRecordButton() throws AcisException, InterruptedException, IOException {
+		logger.info("Clicking on edit button of 1st person record from table");
+		waitForPageLoadTill(10);
+		forceClickWebElement(downArrowPersonRecord);
+		clickWebElement(editPersonRecord);
+		logger.info("Clicked on edit button of 1st person record from table");
+
+	}
+
+	/**
+	 * all textbox
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @param textFieldName
+	 * @param strValue
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+
+	public void enterTextFieldValueOnPersonsInvovled(String option, String textFieldName, String strValue)
+			throws AcisException, InterruptedException {
+		waitForPageLoadTill(5);
+		if (option.equals("first")) {
+			switch (textFieldName) {
+
+			case "age":
+				logger.info("Entering age");
+				waitForElement(ageAtTimeOfReportTextbox);
+				enterText(ageAtTimeOfReportTextbox, strValue);
+				age = Integer.parseInt(strValue);
+				logger.info("Age entered");
+				break;
+
+			case "ageClear":
+				logger.info("Clearing Age");
+				waitForElement(ageAtTimeOfReportTextbox);
+				ageAtTimeOfReportTextbox.clear();
+				logger.info("Age Cleared ");
+				break;
+
+			case "phone":
+				logger.info("entering phone");
+				waitForElement(phone);
+				enterText(phone, strValue);
+				logger.info("entered phone");
+				break;
+
+			case "zipcode":
+				logger.info("entering zipcode");
+				waitForElement(zipCodeTextBox);
+				enterText(zipCodeTextBox, strValue);
+				logger.info("entered zipcode");
+				break;
+
+			case "emailId":
+				logger.info("entered emailID");
+				waitForElement(emailId);
+				enterText(emailId, strValue);
+				logger.info("entering emailID");
+				break;
+
+			case "street1":
+				logger.info("entered street1");
+				waitForElement(street1);
+				enterText(street1, strValue);
+				logger.info("entering street1");
+				break;
+
+			case "street2":
+				logger.info("entered strret2");
+				waitForElement(street2);
+				enterText(street2, strValue);
+				logger.info("entering strret2");
+				break;
+
+			case "city":
+				logger.info("entering City");
+				waitForElement(city);
+				enterText(city, strValue);
+				logger.info("entered City");
+				break;
+
+			case "narrative":
+				logger.info("entering narrative");
+				waitForElement(narrative_textarea);
+				enterText(narrative_textarea, strValue);
+				logger.info("entered narrative");
+				break;
+
+			case "birthdateTextboxClear":
+				logger.info("clearing birthdate textbox");
+				birthDateTextBox.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+				logger.info("cleared birthdate textbox");
+				break;
+
+			default:
+				logger.info("Text Field Value: " + textFieldName + "did not find");
+			}
+
+		} else if (option.equals("second")) {
+			switch (textFieldName) {
+
+			case "age":
+				logger.info("Entering age");
+				waitForElement(ageAtTimeOfReportTextboxSecond);
+				enterText(ageAtTimeOfReportTextboxSecond, strValue);
+				age = Integer.parseInt(strValue);
+				logger.info("Age entered");
+				break;
+
+			case "ageClear":
+				logger.info("Clearing Age");
+				waitForElement(ageAtTimeOfReportTextboxSecond);
+				ageAtTimeOfReportTextboxSecond.clear();
+				logger.info("Age Cleared ");
+				break;
+
+			case "phone":
+				logger.info("entering phone");
+				waitForElement(phoneSecond);
+				enterText(phoneSecond, strValue);
+				logger.info("entered phone");
+				break;
+
+			case "zipcode":
+				logger.info("entering zipcode");
+				waitForElement(zipCodeTextBoxSecond);
+				enterText(zipCodeTextBoxSecond, strValue);
+				logger.info("enteredzipcode");
+				break;
+
+			case "emailId":
+				logger.info("entering emailID");
+				waitForElement(emailIdSecond);
+				enterText(emailIdSecond, strValue);
+				logger.info("entered emailID");
+				break;
+
+			case "street1":
+				logger.info("entering street1");
+				waitForElement(street1Second);
+				enterText(street1Second, strValue);
+				logger.info("entered street1");
+				break;
+
+			case "street2":
+				waitForElement(street2Second);
+				enterText(street2Second, strValue);
+				logger.info("entering strret2");
+				break;
+
+			case "city":
+				logger.info("entering city");
+				waitForElement(citySecond);
+				enterText(citySecond, strValue);
+				logger.info("entered city");
+				break;
+
+			case "narrative":
+				logger.info("entering narrative");
+				waitForElement(narrative_textarea);
+				enterText(narrative_textarea, strValue);
+				logger.info("entered narrative");
+				break;
+
+			case "birthdateTextboxClear":
+				logger.info("clearing birthdate textbox");
+				birthDateTextBoxSecond.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
+				logger.info("cleared birthdate textbox");
+				break;
+
+			default:
+				logger.info("Text Field Value: " + textFieldName + "did not find");
+			}
+
+		}
+		waitForPageLoadTill(5);
+	}
+
+	/**
+	 * Search for new person
+	 * 
+	 * @author amit.kulshreshtha
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+
+	public void searchNewPerson(String NewPerson) throws AcisException, InterruptedException {
+		waitForElement(searchbox);
+		enterText(searchbox, NewPerson);
+		waitForElement(New);
+		clickWebElement(New);
+		logger.info("New Person can be added from here");
+
+	}
+
+	public void verifyPersonData(String ExistingPerson) throws AcisException, InterruptedException {
+		waitForElement(searchbox);
+		enterText(searchbox, ExistingPerson);
+		waitForPageLoadTill(15);
+		waitForElement(searchRecord1);
+		waitForElement(cancelBtn);
+		clickWebElement(cancelBtn);
+		waitForPageLoadTill(5);
+		waitForElement(personInvolvedLabel);
+		logger.info("record found successfully");
+
+		// isElementPresent(By.xpath("//span[@vlocity_ps-typeahead_typeahead_slds and
+		// @class='slds-listbox__option-text
+		// slds-listbox__option-text_entity']/text()='Name: first last; DOB: 8/19/2000;
+		// Age: 20; LKA: ; Mother's Name: '"));
+
+	}
+
+	/***
+	 * PersonInvole Ip no person found and link verfication S-1015:Auto-populate new
+	 * person information with Person Search info
+	 * 
+	 * @author akash.a.gaurav
+	 */
+
+	public void personSearchErrorVerfication(String str) {
+		waitForPageLoadTill(5);
+		logger.info("Verifying error of no person search");
+		verifyTextEquals(errorPersonSearch, str);
+		logger.info("Verfied person search error");
+		verifyElementNotPresent(linkCreateNewPerson);
+		logger.info("Verfied link to create person");
+	}
+
+	public void cancel() throws AcisException {
+
+		waitForPageLoad();
+		clickWebElement(cancelBn);
+		waitForPageLoadTill(5);
+		logger.info("Closing person");
+		clickWebElement(closePerson);
+		logger.info("Closed person ");
+		waitForPageLoadTill(5);
+		clickWebElement(closeCasePerson);
+		waitForPageLoadTill(5);
+
+	}
+
+	/**
+	 * Set First name, middle name, last name
+	 * 
+	 * @author mrunal.s.tilekar
+	 * @throws AcisException
+	 */
+	public void setAllNamesafterClickingWorkflow(String option, String firstName, String middleName, String lastName)
+			throws AcisException {
+		switch (option) {
+		case "first":
+			logger.info("Entering First name, middle name, last name");
+			waitForElement(firstNameTextBoxWorkflow);
+			enterText(firstNameTextBoxWorkflow, firstName);
+			enterText(middleNameTextBoxWorkflow, middleName);
+			enterText(lastNameTextBoxWorkflow, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		case "second":
+			logger.info("Entering First name, middle name, last name");
+			waitForElement(firstNameTextBoxSecond);
+			enterText(firstNameTextBoxSecond, firstName);
+			enterText(middleNameTextBoxSecond, middleName);
+			enterText(lastNameTextBoxSecond, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		case "next":
+			waitForElement(firstNameTextBoxNext);
+			logger.info("Entering First name, middle name, last name");
+			enterText(firstNameTextBoxNext, firstName);
+			enterText(middleNameTextBoxNext, middleName);
+			enterText(lastNameTextBoxNext, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		}
+		waitForPageLoadTill(5);
+	}
+
+	/***
+	 * Verifying name save same as created
+	 * 
+	 * @throws AcisException
+	 */
+
+	public void verifyName(String str) throws AcisException {
+		waitForPageLoadTill(9);
+
+		String nameVerify = driver.findElement(By.xpath("//div[contains(text(),'" + str + "')]")).getText().trim();
+		System.out.println(nameVerify);
+
+		if (nameVerify.contains(str)) {
+			logger.info("Verified person matched");
+
+		}
+		// waitAndVerifyElement(By.xpath("//div[text()='" + age + "']"));
+
+	}
+
+	/**
+	 * Set First name, middle name, last name for test case populate new
+	 * 
+	 * @author akash.a.gauravr
+	 * @throws AcisException
+	 * @throws IOException
+	 * @throws UnsupportedFlavorException
+	 */
+	public String setAllNamesafterClickingWorkflowPopulate(String option, String firstName, String middleName,
+			String lastName) throws AcisException, UnsupportedFlavorException, IOException {
+
+		String nameVerify = "";
+		switch (option) {
+		case "first":
+			logger.info("Entering First name, middle name, last name");
+			waitForElement(firstNameTextBoxWorkflow);
+			Actions act = new Actions(driver);
+			clickWebElement(firstNameTextBoxWorkflow);
+			act.sendKeys(Keys.CONTROL).sendKeys(firstName).keyUp(Keys.CONTROL).perform();
+			act.keyDown(Keys.CONTROL).sendKeys(String.valueOf('\u0061')).keyUp(Keys.CONTROL).perform();
+			act.keyDown(Keys.CONTROL).sendKeys(String.valueOf('\u0063')).keyUp(Keys.CONTROL).perform();
+			// String
+			// narrative=act.keyDown(Keys.CONTROL).sendKeys(String.valueOf('\u0063')).keyUp(Keys.CONTROL).perform();
+			// act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).build().perform();
+			// act.keyDown(Keys.CONTROL).sendKeys(String.valueOf('\u0061')).keyUp(Keys.CONTROL).perform();
+			// act.keyDown(Keys.CONTROL).sendKeys(String.valueOf('\u006B')).keyUp(Keys.CONTROL).perform();
+
+			// switchToFrameByWebElement(narrativeFrame);
+
+			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+			Transferable contents = clipboard.getContents(null);
+			nameVerify = (String) contents.getTransferData(DataFlavor.stringFlavor);
+			System.out.println(nameVerify);
+
+			enterText(middleNameTextBoxWorkflow, middleName);
+			enterText(lastNameTextBoxWorkflow, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		case "second":
+			logger.info("Entering First name, middle name, last name");
+			waitForElement(firstNameTextBoxSecond);
+			enterText(firstNameTextBoxSecond, firstName);
+			enterText(middleNameTextBoxSecond, middleName);
+			enterText(lastNameTextBoxSecond, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		case "next":
+			waitForElement(firstNameTextBoxNext);
+			logger.info("Entering First name, middle name, last name");
+			enterText(firstNameTextBoxNext, firstName);
+			enterText(middleNameTextBoxNext, middleName);
+			enterText(lastNameTextBoxNext, lastName);
+
+			logger.info("Set First name, middle name, last name");
+			personName = firstName + " " + middleName + " " + lastName;
+			break;
+		}
+		waitForPageLoadTill(5);
+		return nameVerify;
+	}
+
+	/***
+	 * close person
+	 * 
+	 * @throws AcisException
+	 */
+	public void close() throws AcisException {
+
+		waitForPageLoad();
+		clickWebElement(cancelBn);
+		waitForPageLoadTill(5);
+		logger.info("Closing person");
+		clickWebElement(closePerson);
+	}
+	
+	/**
+	 * Search a person with valid input
+	 * 
+	 * @author akash.a.gaurav
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+	public void searchPersonUsingvalidData(String name, String str1) throws AcisException, InterruptedException {
+
+		switch (name) {
+		case "firstName":
+			logger.info("Selecting first Name  and searching ");
+			waitForElement(firstNames);
+			enterText(firstNames, str1);
+			waitForPageLoadTill(5);
+			clickWebElement(searchButton);
+			waitForElement(firstNameVerify);
+			waitForPageLoadTill(5);
+			if (isElementPresent(closeVerify)) {
+				logger.info("Clicking on Close Button");
+				waitForElementClickable(close);
+				clickWebElement(close);
+				logger.info("Clicked on Close Button");
+			}
+			logger.info("Searching using first person");
+			break;
+
+		case "lastName":
+			logger.info("Seleting last name and searching ");
+			waitForElement(lastNames);
+			enterText(lastNames, str1);
+			waitForPageLoadTill(5);
+			clickWebElement(searchButton);
+			waitForElement(firstNameVerify);
+			waitForPageLoadTill(5);
+			if (isElementPresent(closeVerify)) {
+				logger.info("Clicking on Close Button");
+				waitForElementClickable(close);
+				clickWebElement(close);
+				logger.info("Clicked on Close Button");
+			}
+			logger.info("Searching using lastname person");
+			break;
+
+		case "dob":
+			logger.info("Selecting dob name and searching ");
+			waitForElement(dateofBirth);
+			enterText(dateofBirth, str1);
+			waitForPageLoadTill(5);
+			clickWebElement(searchButton);
+			waitForElement(firstNameVerify);
+			waitForPageLoadTill(5);
+			if (isElementPresent(closeVerify)) {
+				logger.info("Clicking on Close Button");
+				waitForElementClickable(close);
+				clickWebElement(close);
+				logger.info("Clicked on Close Button");
+			}
+			logger.info("Searching using dob person");
+			break;
+		default:
+			logger.info("Date: " + name + " not found");
+			break;
+
+		}
+
+	}
+	
+	/***
+	 * Link to create new person
+	 * 
+	 * @throws AcisException
+	 */
+	public void linkToCreateNewPerson() throws AcisException {
+		waitForPageLoadTill(9);
+		logger.info("Clikcing on link to create new person");
+		Actions act = new Actions(driver);
+		waitForPageLoadTill(9);
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,650)");
+		clickWebElemntUsingJavascriptExecutor(linkCreateNewPerson);
+		logger.info("Clicked on link to create new person");
+		waitForPageLoadTill(10);
+	}
+	
+	/**
+	 * Click on close button
+	 * 
+	 * @author Dharmesh Krishna
+	 * @throws AcisException
+	 * @throws InterruptedException
+	 */
+	public void closeCreateIntakePerson() throws AcisException {
+		logger.info("Closing CreateIntakePerson");
+		waitForElement(saveVerify);
+		clickWebElemntUsingJavascriptExecutor(closeButton);
+		waitForPageLoadTill(5);
+		waitForElement(refreshPersonsButton);
+		logger.info("Added Person");
+	}
+	
+	/**
+	 * Click on refresh person button
+	 * 
+	 * @author mrunal.s.tilekar
+	 */
+	public void clickRefresPersonButton() throws AcisException {
+		logger.info("Clicking refresh person button");
+		waitForPageLoadTill(5);
+		clickWebElemntUsingJavascriptExecutor(refreshPersonsButton);
+		waitForPageLoadTill(5);
+		logger.info("Clicked refresh person button");
+		waitForPageLoadTill(5);
+		logger.info("Successfully clicked refresh person button");
+
+	}
+}
